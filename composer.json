@@ -1,5 +1,17 @@
 {
     "name": "nezhkind/kuber.packages.communication-contract-object",
+    "type": "library",
+    "description": "Kuber configs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nehkin Dmitriy"
+        },
+        {
+            "name": "Kulesh Ilya"
+        }
+    ],
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Kubersoftware\\Microservices\\": "microservices/",
