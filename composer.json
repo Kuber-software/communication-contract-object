@@ -1,5 +1,5 @@
 {
-    "name": "kubersoftware/kuber.packages.communication-contract-object",
+    "name": "kubersoftware/communication-contract-object",
     "type": "library",
     "description": "Kuber configs",
     "license": "MIT",
