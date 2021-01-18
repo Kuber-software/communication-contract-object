@@ -1,0 +1,14 @@
+{
+    "name": "nezhkind/kuber.packages.communication-contract-object",
+    "autoload": {
+        "psr-4": {
+            "Kubersoftware\\Microservices\\": "microservices/",
+            "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\UserTokenCollection\\Entity\\": "microservices/NoSqlManagerMicroservice/UserTokenCollection/Entity/",
+            "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\UserTokenCollection\\Interfaces\\": "microservices/NoSqlManagerMicroservice/UserTokenCollection/Interfaces/"
+        }
+    },
+    "require": {
+        "ramsey/uuid": "^4.1",
+        "doctrine/collections": "^1.6"
+    }
+}
