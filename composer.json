@@ -1,5 +1,5 @@
 {
-    "name": "nezhkind/kuber.packages.communication-contract-object",
+    "name": "kubersoftware/kuber.packages.communication-contract-object",
     "type": "library",
     "description": "Kuber configs",
     "license": "MIT",
