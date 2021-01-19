@@ -7,10 +7,12 @@ namespace Kubersoftware\Microservices\NosqlManagerMicroservice\UserTokenCollecti
 use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Ramsey\Uuid\UuidInterface;
+use JMS\Serializer\Annotation as JMS;
 
 class UserTokenEntity
 {
     /**
+     * @JMS\Type("uuid")
      * @var UuidInterface
      */
     private UuidInterface $userUuid;
