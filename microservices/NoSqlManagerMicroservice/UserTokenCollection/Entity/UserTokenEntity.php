@@ -6,6 +6,7 @@ namespace Kubersoftware\Microservices\NosqlManagerMicroservice\UserTokenCollecti
 
 use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
+use JMS\Serializer\Annotation\Type;
 use Ramsey\Uuid\UuidInterface;
 use JMS\Serializer\Annotation as JMS;
 
@@ -35,6 +36,7 @@ class UserTokenEntity
 
     /**
      * Информация о сессии: браузер, язык, ip и тд
+     *
      * @var ArrayCollection
      */
     private ArrayCollection $userInformation;
