@@ -13,12 +13,12 @@ class SerializerContext
         $this->serializerTool = $serializerTool;
     }
 
-    public function serialize(object $data, string $format): string
+    public function serialize(object $data, string $format = 'json'): string
     {
         return $this->serializerTool->serialize($data, $format);
     }
 
-    public function deserialize(string $data, string $objectName, string $format): object
+    public function deserialize(string $data, string $objectName, string $format = 'json'): object
     {
         return $this->serializerTool->deserialize($data, $objectName, $format);
     }
