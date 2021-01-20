@@ -24,9 +24,9 @@
         "mhujer/jms-serializer-uuid": "^3.3",
         "jms/serializer": "^3.11",
         "gbprod/uuid-normalizer": "^1.2",
-        "symfony/serializer": "^5.2",
-        "symfony/property-access": "^5.2",
-        "symfony/property-info": "^5.2",
+        "symfony/serializer": "4.4.*",
+        "symfony/property-access": "4.4.*",
+        "symfony/property-info": "4.4.*",
         "phpdocumentor/reflection-docblock": "^5.2"
     }
 }
