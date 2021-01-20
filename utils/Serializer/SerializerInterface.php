@@ -1,6 +1,6 @@
 <?php
 
-namespace Kubersoftware\Util\Serializer;
+namespace Kubersoftware\Utils\Serializer;
 
 
 interface SerializerInterface

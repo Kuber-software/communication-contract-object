@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Kubersoftware\Util\Serializer;
+namespace Kubersoftware\Utils\Serializer;
 
 
-class SerializerInterfaceImpl
+class SerializerContext
 {
     private SerializerInterface $serializerTool;
 

@@ -13,7 +13,8 @@
         "psr-4": {
             "Kubersoftware\\Microservices\\": "microservices/",
             "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\UserTokenCollection\\Entity\\": "microservices/NoSqlManagerMicroservice/UserTokenCollection/Entity/",
-            "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\UserTokenCollection\\Interfaces\\": "microservices/NoSqlManagerMicroservice/UserTokenCollection/Interfaces/"
+            "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\UserTokenCollection\\Interfaces\\": "microservices/NoSqlManagerMicroservice/UserTokenCollection/Interfaces/",
+            "Kubersoftware\\Utils\\Serializer\\": "utils/Serializer/"
         }
     },
     "require": {
