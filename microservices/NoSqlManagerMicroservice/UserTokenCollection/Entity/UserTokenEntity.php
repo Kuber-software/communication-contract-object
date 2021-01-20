@@ -35,11 +35,12 @@ class UserTokenEntity
     private DateTime $expiresAt;
 
     /**
+     * @Type("array<string>")
      * Информация о сессии: браузер, язык, ip и тд
      *
-     * @var ArrayCollection
+     * @var array
      */
-    private ArrayCollection $userInformation;
+    private array $userInformation;
 
 
     /**
@@ -115,18 +116,18 @@ class UserTokenEntity
     }
 
     /**
-     * @return ArrayCollection
+     * @return array
      */
-    public function getUserInformation(): ArrayCollection
+    public function getUserInformation(): array
     {
         return $this->userInformation;
     }
 
     /**
-     * @param ArrayCollection $userInformation
+     * @param array $userInformation
      * @return UserTokenEntity
      */
-    public function setUserInformation(ArrayCollection $userInformation): UserTokenEntity
+    public function setUserInformation(array $userInformation): UserTokenEntity
     {
         $this->userInformation = $userInformation;
         return $this;

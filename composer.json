@@ -21,6 +21,7 @@
     "require": {
         "ramsey/uuid": "^4.1",
         "doctrine/collections": "^1.6",
-        "mhujer/jms-serializer-uuid": "^3.3"
+        "mhujer/jms-serializer-uuid": "^3.3",
+        "jms/serializer": "^3.11"
     }
 }
