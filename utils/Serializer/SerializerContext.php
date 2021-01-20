@@ -18,7 +18,7 @@ class SerializerContext
         return $this->serializerTool->serialize($data, $format);
     }
 
-    public function deserialize(string $data, string $objectName, string $format): string
+    public function deserialize(string $data, string $objectName, string $format): object
     {
         return $this->serializerTool->deserialize($data, $objectName, $format);
     }
