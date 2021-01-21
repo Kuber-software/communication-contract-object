@@ -14,6 +14,8 @@
             "Kubersoftware\\Microservices\\": "microservices/",
             "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\UserTokenCollection\\Entity\\": "microservices/NoSqlManagerMicroservice/UserTokenCollection/Entity/",
             "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\UserTokenCollection\\Interfaces\\": "microservices/NoSqlManagerMicroservice/UserTokenCollection/Interfaces/",
+            "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\Interface\\": "microservices/NoSqlManagerMicroservice/Interface/",
+            "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\Entity\\": "microservices/NoSqlManagerMicroservice/Entity/",
             "Kubersoftware\\Utils\\Serializer\\": "utils/Serializer/",
             "Kubersoftware\\Utils\\Serializer\\Strategy\\": "utils/Serializer/Strategy/"
         }

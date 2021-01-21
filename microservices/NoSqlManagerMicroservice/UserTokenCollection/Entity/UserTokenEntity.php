@@ -24,12 +24,14 @@ class UserTokenEntity
     private string $token;
 
     /**
+     * @Type("DateTime<'Y-m-d'>")
      * @var DateTime
      */
     private DateTime $createdAt;
 
     /**
      * Действителен до
+     * @Type("DateTime<'Y-m-d'>")
      * @var DateTime
      */
     private DateTime $expiresAt;
