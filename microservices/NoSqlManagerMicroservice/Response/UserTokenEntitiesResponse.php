@@ -3,12 +3,7 @@
 
 namespace App\Microservices\NosqlManagerMicroservice\Response;
 
-
-use App\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
-use DateTime;
-use Doctrine\Common\Collections\ArrayCollection;
-use JMS\Serializer\Annotation\Type;
-use Ramsey\Uuid\UuidInterface;
+use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
 use Spatie\Typed\Collection;
 use Spatie\Typed\T;
 
