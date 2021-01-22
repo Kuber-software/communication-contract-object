@@ -17,6 +17,8 @@
             "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\Interface\\": "microservices/NoSqlManagerMicroservice/Interface/",
             "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\Entity\\": "microservices/NoSqlManagerMicroservice/Entity/",
             "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\": "microservices/NoSqlManagerMicroservice/",
+            "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\Request\\": "microservices/NoSqlManagerMicroservice/Request/",
+            "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\Response\\": "microservices/NoSqlManagerMicroservice/Response/",
             "Kubersoftware\\Utils\\Serializer\\": "utils/Serializer/",
             "Kubersoftware\\Utils\\Serializer\\Strategy\\": "utils/Serializer/Strategy/",
             "Kubersoftware\\Microservices\\MessageBroker\\MessageObject\\": "microservices/MessageBroker/MessageObject/"
