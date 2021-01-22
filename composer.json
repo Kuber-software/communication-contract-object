@@ -17,7 +17,9 @@
             "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\Interface\\": "microservices/NoSqlManagerMicroservice/Interface/",
             "Kubersoftware\\Microservices\\NosqlManagerMicroservice\\Entity\\": "microservices/NoSqlManagerMicroservice/Entity/",
             "Kubersoftware\\Utils\\Serializer\\": "utils/Serializer/",
-            "Kubersoftware\\Utils\\Serializer\\Strategy\\": "utils/Serializer/Strategy/"
+            "Kubersoftware\\Utils\\Serializer\\Strategy\\": "utils/Serializer/Strategy/",
+            "Kubersoftware\\Microservices\\MessageBroker\\MessageObject\\": "microservices/MessageBroker/MessageObject/"
+
         }
     },
     "require": {
