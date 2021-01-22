@@ -45,10 +45,10 @@ class MessageDto
     private int $maxWaitTimeInSec;
 
     /**
-     * Роутинг-кей
+     * Имя метода
      * @var string
      */
-    private string $routingKey;
+    private string $methodName;
 
 
     public function __construct()
@@ -98,16 +98,6 @@ class MessageDto
     public function getCreatedAt(): DateTime
     {
         return $this->createdAt;
-    }
-
-    /**
-     * @param DateTime $createdAt
-     * @return MessageDto
-     */
-    public function setCreatedAt(DateTime $createdAt): MessageDto
-    {
-        $this->createdAt = $createdAt;
-        return $this;
     }
 
     /**
@@ -167,19 +157,18 @@ class MessageDto
     /**
      * @return string
      */
-    public function getRoutingKey(): string
+    public function getMethodName(): string
     {
-        return $this->routingKey;
+        return $this->methodName;
     }
 
     /**
-     * @param string $routingKey
+     * @param string $methodName
      * @return MessageDto
      */
-    public function setRoutingKey(string $routingKey): MessageDto
+    public function setMethodName(string $methodName): MessageDto
     {
-        $this->routingKey = $routingKey;
+        $this->methodName = $methodName;
         return $this;
     }
-
 }

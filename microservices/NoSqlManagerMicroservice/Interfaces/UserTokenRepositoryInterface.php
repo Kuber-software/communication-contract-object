@@ -7,7 +7,7 @@ use Kubersoftware\Microservices\NosqlManagerMicroservice\Request\UserTokenReques
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Response\UserTokenEntitiesResponse;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Response\UserTokenIdResponse;
 
-interface UserTokenCollectionInterface
+interface UserTokenRepositoryInterface
 {
     /**
      * @param UserTokenRequest $userTokenEntity
