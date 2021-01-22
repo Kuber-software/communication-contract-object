@@ -2,16 +2,26 @@
 
 namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Interfaces;
 
-
-use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
+use App\Microservices\NosqlManagerMicroservice\Response\UserTokenIdResponse;
+use Kubersoftware\Microservices\NosqlManagerMicroservice\Request\UserTokenRequest;
 
 interface UserTokenCollectionInterface
 {
-    public function insertOne(UserTokenEntity $userTokenEntity): string;
+    /**
+     * @param UserTokenRequest $userTokenEntity
+     * @return UserTokenIdResponse
+     */
+    public function insertOne(UserTokenRequest $userTokenEntity): UserTokenIdResponse;
 
-    public function insertMany(UserTokenEntity $userTokenEntity): string;
+    /**
+     * @param array $userTokenEntity - массив из объектов UserTokenRequest
+     * @return array - массив из объектов UserTokenIdResponse
+     */
+    public function insertMany(array $userTokenEntity): array;
 
-    public function updateOne(UserTokenEntity $userTokenEntity): UserTokenEntity;
+    public function findByUserToken();
 
-    public function updateMany(UserTokenEntity $userTokenEntity): UserTokenEntity;
+    public function updateOne(UserTokenRequest $userTokenEntity): UserTokenRequest;
+
+    public function updateMany(UserTokenRequest $userTokenEntity): UserTokenRequest;
 }

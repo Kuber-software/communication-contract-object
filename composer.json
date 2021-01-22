@@ -31,6 +31,7 @@
         "symfony/serializer": "4.4.*",
         "symfony/property-access": "4.4.*",
         "symfony/property-info": "4.4.*",
-        "phpdocumentor/reflection-docblock": "^5.2"
+        "phpdocumentor/reflection-docblock": "^5.2",
+        "spatie/typed": "^0.1.2"
     }
 }

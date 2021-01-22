@@ -1,14 +1,10 @@
 <?php
 
-
-namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Entity;
-
+namespace App\Microservices\NosqlManagerMicroservice\Entity;
 
 use DateTime;
-use Doctrine\Common\Collections\ArrayCollection;
 use JMS\Serializer\Annotation\Type;
 use Ramsey\Uuid\UuidInterface;
-use JMS\Serializer\Annotation as JMS;
 
 class UserTokenEntity
 {
@@ -43,7 +39,6 @@ class UserTokenEntity
      * @var array
      */
     private array $userInformation;
-
 
     /**
      * @return UuidInterface
@@ -134,4 +129,5 @@ class UserTokenEntity
         $this->userInformation = $userInformation;
         return $this;
     }
+
 }

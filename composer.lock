@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1af1366175be8b9c2ced4647861ee097",
+    "content-hash": "20e88d62671bb41a9e728c124507ebc5",
     "packages": [
         {
             "name": "brick/math",
@@ -988,6 +988,62 @@
                 }
             ],
             "time": "2020-08-18T17:17:46+00:00"
+        },
+        {
+            "name": "spatie/typed",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/typed.git",
+                "reference": "e8ff69222d19a92fa0f8b871ccb4cab2bef53756"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/typed/zipball/e8ff69222d19a92fa0f8b871ccb4cab2bef53756",
+                "reference": "e8ff69222d19a92fa0f8b871ccb4cab2bef53756",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "larapack/dd": "^1.1",
+                "phpunit/phpunit": "^7.1",
+                "symfony/stopwatch": "^4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Typed\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brent Roose",
+                    "email": "brent@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Improvements to PHP's type system in userland: generics, typed lists, tuples and structs",
+            "homepage": "https://github.com/spatie/typed",
+            "keywords": [
+                "generics",
+                "spatie",
+                "structs",
+                "tuple",
+                "typed",
+                "typed list"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/typed/issues",
+                "source": "https://github.com/spatie/typed/tree/0.1.2"
+            },
+            "time": "2020-11-20T08:48:46+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
