@@ -10,10 +10,10 @@ use Kubersoftware\Microservices\NosqlManagerMicroservice\Response\UserTokenIdRes
 interface UserTokenRepositoryInterface
 {
     /**
-     * @param UserTokenRequest $userTokenEntity
+     * @param UserTokenRequest $userTokenRequest
      * @return UserTokenIdResponse
      */
-    public function insertOne(UserTokenRequest $userTokenEntity): UserTokenIdResponse;
+    public function insertOne(UserTokenRequest $userTokenRequest): UserTokenIdResponse;
 
     /**
      * @param array $userTokenEntity - массив из объектов UserTokenRequest
