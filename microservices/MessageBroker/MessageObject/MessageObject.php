@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\MessageBroker\MessageObject;
+namespace Kubersoftware\Microservices\MessageBroker\MessageObject;
 
 
 use DateTime;
