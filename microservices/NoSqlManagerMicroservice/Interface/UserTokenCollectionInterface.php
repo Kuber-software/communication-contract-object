@@ -2,6 +2,7 @@
 
 namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Interfaces;
 
+use App\Microservices\NosqlManagerMicroservice\Response\UserTokenEntitiesResponse;
 use App\Microservices\NosqlManagerMicroservice\Response\UserTokenIdResponse;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Request\UserTokenRequest;
 
@@ -19,7 +20,7 @@ interface UserTokenCollectionInterface
      */
     public function insertMany(array $userTokenEntity): array;
 
-    public function findByUserToken();
+    public function findByUserUuid(string $userUuid): UserTokenEntitiesResponse;
 
     public function updateOne(UserTokenRequest $userTokenEntity): UserTokenRequest;
 

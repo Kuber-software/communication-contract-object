@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Microservices\NosqlManagerMicroservice\Entity;
+namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Entity;
 
 use DateTime;
 use JMS\Serializer\Annotation\Type;
