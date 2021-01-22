@@ -3,12 +3,11 @@
 
 namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Request;
 
-
-use App\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
 use DateTime;
 use JMS\Serializer\Annotation\Type;
 use Kubersoftware\Microservices\MessageBroker\MessageDto;
 use Kubersoftware\Microservices\MessageBroker\MessageDtoInterface;
+use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
 use Ramsey\Uuid\UuidInterface;
 use JMS\Serializer\Annotation as JMS;
 

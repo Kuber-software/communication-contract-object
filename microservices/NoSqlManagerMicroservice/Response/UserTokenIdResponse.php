@@ -1,7 +1,5 @@
 <?php
-
-
-namespace App\Microservices\NosqlManagerMicroservice\Response;
+namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Response;
 
 // todo добавить интерфейс объекта Logger
 class UserTokenIdResponse

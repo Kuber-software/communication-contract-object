@@ -2,9 +2,10 @@
 
 namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Interfaces;
 
-use App\Microservices\NosqlManagerMicroservice\Response\UserTokenEntitiesResponse;
-use App\Microservices\NosqlManagerMicroservice\Response\UserTokenIdResponse;
+
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Request\UserTokenRequest;
+use Kubersoftware\Microservices\NosqlManagerMicroservice\Response\UserTokenEntitiesResponse;
+use Kubersoftware\Microservices\NosqlManagerMicroservice\Response\UserTokenIdResponse;
 
 interface UserTokenCollectionInterface
 {
