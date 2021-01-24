@@ -6,7 +6,7 @@ namespace Kubersoftware\Microservices;
 
 class BaseObject
 {
-    protected bool $objectNull;
+    protected bool $objectNull = false;
 
     /**
      * @return bool
@@ -18,6 +18,7 @@ class BaseObject
 
     /**
      * @param bool $objectNull
+     * @return BaseObject
      */
     public function setObjectNull(bool $objectNull): self
     {
