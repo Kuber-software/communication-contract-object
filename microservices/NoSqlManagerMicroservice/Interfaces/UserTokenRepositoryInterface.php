@@ -13,17 +13,19 @@ interface UserTokenRepositoryInterface
      * @param UserTokenRequest $userTokenRequest
      * @return UserTokenIdResponse
      */
-    public function insertOne(UserTokenRequest $userTokenRequest): UserTokenIdResponse;
+    public function insertOneUserToken(UserTokenRequest $userTokenRequest): UserTokenIdResponse;
 
     /**
-     * @param array $userTokenEntity - массив из объектов UserTokenRequest
-     * @return array - массив из объектов UserTokenIdResponse
+     * @param UserTokenRequest $userTokenRequest
+     * @return UserTokenEntitiesResponse
      */
-    public function insertMany(array $userTokenEntity): array;
+    public function findOneUserToken(UserTokenRequest $userTokenRequest): UserTokenEntitiesResponse;
 
-    public function findByUserUuid(string $userUuid): UserTokenEntitiesResponse;
 
-    public function updateOne(UserTokenRequest $userTokenEntity): UserTokenRequest;
+    /**
+     * @param UserTokenRequest $userTokenRequest
+     * @return bool
+     */
+    public function deleteOneUserToken(UserTokenRequest $userTokenRequest): bool;
 
-    public function updateMany(UserTokenRequest $userTokenEntity): UserTokenRequest;
 }
