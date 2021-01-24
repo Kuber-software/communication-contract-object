@@ -40,6 +40,12 @@ class UserTokenEntity
      */
     private array $userInformation;
 
+
+    public function __construct()
+    {
+        $this->createdAt = new DateTime();
+    }
+
     /**
      * @return UuidInterface
      */
@@ -82,16 +88,6 @@ class UserTokenEntity
     public function getCreatedAt(): DateTime
     {
         return $this->createdAt;
-    }
-
-    /**
-     * @param DateTime $createdAt
-     * @return UserTokenEntity
-     */
-    public function setCreatedAt(DateTime $createdAt): UserTokenEntity
-    {
-        $this->createdAt = $createdAt;
-        return $this;
     }
 
     /**
