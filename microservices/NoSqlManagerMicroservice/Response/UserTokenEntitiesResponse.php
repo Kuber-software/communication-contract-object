@@ -1,11 +1,12 @@
 <?php
 namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Response;
 
+use Kubersoftware\Microservices\BaseObject;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
 use Spatie\Typed\Collection;
 use Spatie\Typed\T;
 
-class UserTokenEntitiesResponse
+class UserTokenEntitiesResponse extends BaseObject
 {
     private Collection $collection;
 
@@ -30,6 +31,24 @@ class UserTokenEntitiesResponse
     {
         $this->collection[] = $userTokenEntity;
 
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isNull(): bool
+    {
+        return $this->isNull;
+    }
+
+    /**
+     * @param bool $isNull
+     * @return UserTokenEntitiesResponse
+     */
+    public function setIsNull(bool $isNull): UserTokenEntitiesResponse
+    {
+        $this->isNull = $isNull;
         return $this;
     }
 

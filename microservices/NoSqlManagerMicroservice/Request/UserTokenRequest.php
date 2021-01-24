@@ -3,15 +3,12 @@
 
 namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Request;
 
-use DateTime;
-use JMS\Serializer\Annotation\Type;
+use Kubersoftware\Microservices\BaseObject;
 use Kubersoftware\Microservices\MessageBroker\MessageDto;
 use Kubersoftware\Microservices\MessageBroker\MessageDtoInterface;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
-use Ramsey\Uuid\UuidInterface;
-use JMS\Serializer\Annotation as JMS;
 
-class UserTokenRequest implements MessageDtoInterface
+class UserTokenRequest extends BaseObject implements MessageDtoInterface
 {
     private UserTokenEntity $userTokenEntity;
 
@@ -44,5 +41,23 @@ class UserTokenRequest implements MessageDtoInterface
     public function getMessageDto(): MessageDto
     {
         return $this->messageDto;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isNull(): bool
+    {
+        return $this->isNull;
+    }
+
+    /**
+     * @param bool $isNull
+     * @return UserTokenRequest
+     */
+    public function setIsNull(bool $isNull): UserTokenRequest
+    {
+        $this->isNull = $isNull;
+        return $this;
     }
 }
