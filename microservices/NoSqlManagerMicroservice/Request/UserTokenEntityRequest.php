@@ -8,27 +8,27 @@ use Kubersoftware\Microservices\MessageBroker\MessageDto;
 use Kubersoftware\Microservices\MessageBroker\MessageDtoInterface;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
 
-class UserTokenRequest extends BaseObject implements MessageDtoInterface
+class UserTokenEntityRequest extends BaseObject implements MessageDtoInterface
 {
-    private string $userToken;
+    private UserTokenEntity $userTokenEntity;
 
     private MessageDto $messageDto;
 
     /**
-     * @return string
+     * @return UserTokenEntity
      */
-    public function getUserToken(): string
+    public function getUserTokenEntity(): UserTokenEntity
     {
-        return $this->userToken;
+        return $this->userTokenEntity;
     }
 
     /**
-     * @param string $userToken
-     * @return UserTokenRequest
+     * @param UserTokenEntity $userTokenEntity
+     * @return UserTokenEntityRequest
      */
-    public function setUserToken(string $userToken): UserTokenRequest
+    public function setUserTokenEntity(UserTokenEntity $userTokenEntity): UserTokenEntityRequest
     {
-        $this->userToken = $userToken;
+        $this->userTokenEntity = $userTokenEntity;
         return $this;
     }
 
@@ -53,9 +53,9 @@ class UserTokenRequest extends BaseObject implements MessageDtoInterface
 
     /**
      * @param bool $isNull
-     * @return UserTokenRequest
+     * @return UserTokenEntityRequest
      */
-    public function setIsNull(bool $isNull): UserTokenRequest
+    public function setIsNull(bool $isNull): UserTokenEntityRequest
     {
         $this->isNull = $isNull;
         return $this;
