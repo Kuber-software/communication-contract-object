@@ -13,24 +13,6 @@ class UserTokenEntityBooleanResponse extends BaseObject
     /**
      * @return bool
      */
-    public function isNull(): bool
-    {
-        return $this->isNull;
-    }
-
-    /**
-     * @param bool $isNull
-     * @return UserTokenEntityBooleanResponse
-     */
-    public function setIsNull(bool $isNull): UserTokenEntityBooleanResponse
-    {
-        $this->isNull = $isNull;
-        return $this;
-    }
-
-    /**
-     * @return bool
-     */
     public function isResult(): bool
     {
         return $this->result;

@@ -25,22 +25,4 @@ class UserTokenIdResponse extends BaseObject
         return $this;
     }
 
-    /**
-     * @return bool
-     */
-    public function isNull(): bool
-    {
-        return $this->isNull;
-    }
-
-    /**
-     * @param bool $isNull
-     * @return UserTokenIdResponse
-     */
-    public function setIsNull(bool $isNull): UserTokenIdResponse
-    {
-        $this->isNull = $isNull;
-        return $this;
-    }
-
 }

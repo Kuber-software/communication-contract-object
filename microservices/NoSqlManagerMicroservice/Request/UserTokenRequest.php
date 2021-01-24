@@ -42,22 +42,4 @@ class UserTokenRequest extends BaseObject implements MessageDtoInterface
     {
         return $this->messageDto;
     }
-
-    /**
-     * @return bool
-     */
-    public function isNull(): bool
-    {
-        return $this->isNull;
-    }
-
-    /**
-     * @param bool $isNull
-     * @return UserTokenRequest
-     */
-    public function setIsNull(bool $isNull): UserTokenRequest
-    {
-        $this->isNull = $isNull;
-        return $this;
-    }
 }

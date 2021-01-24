@@ -28,22 +28,4 @@ class UserTokenEntitiesArrayResponse extends BaseObject
         return $this;
     }
 
-    /**
-     * @return bool
-     */
-    public function isNull(): bool
-    {
-        return $this->isNull;
-    }
-
-    /**
-     * @param bool $isNull
-     * @return UserTokenEntitiesArrayResponse
-     */
-    public function setIsNull(bool $isNull): UserTokenEntitiesArrayResponse
-    {
-        $this->isNull = $isNull;
-        return $this;
-    }
-
 }

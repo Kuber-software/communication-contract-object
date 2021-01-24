@@ -43,22 +43,4 @@ class UserUuidRequest extends BaseObject implements MessageDtoInterface
     {
         return $this->messageDto;
     }
-
-    /**
-     * @return bool
-     */
-    public function isNull(): bool
-    {
-        return $this->isNull;
-    }
-
-    /**
-     * @param bool $isNull
-     * @return UserUuidRequest
-     */
-    public function setIsNull(bool $isNull): UserUuidRequest
-    {
-        $this->isNull = $isNull;
-        return $this;
-    }
 }
