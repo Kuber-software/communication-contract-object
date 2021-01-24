@@ -19,8 +19,9 @@ class BaseObject
     /**
      * @param bool $objectNull
      */
-    public function setObjectNull(bool $objectNull): void
+    public function setObjectNull(bool $objectNull): self
     {
         $this->objectNull = $objectNull;
+        return $this;
     }
 }
