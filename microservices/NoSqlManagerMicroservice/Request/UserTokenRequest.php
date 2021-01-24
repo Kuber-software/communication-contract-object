@@ -10,7 +10,7 @@ use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
 
 class UserTokenRequest extends BaseObject implements MessageDtoInterface
 {
-    private string $userToken;
+    private string $userToken = 'null';
 
     private MessageDto $messageDto;
 

@@ -8,7 +8,7 @@ use Kubersoftware\Microservices\BaseObject;
 
 class UserTokenEntityBooleanResponse extends BaseObject
 {
-    private bool $result;
+    private bool $result = false;
 
     /**
      * @return bool
