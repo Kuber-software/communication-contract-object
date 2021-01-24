@@ -4,7 +4,7 @@
 namespace Kubersoftware\Microservices;
 
 
-abstract class BaseObject
+class BaseObject
 {
     protected bool $objectNull;
 
