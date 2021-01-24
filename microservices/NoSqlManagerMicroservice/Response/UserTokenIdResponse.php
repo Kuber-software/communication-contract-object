@@ -5,7 +5,7 @@ use Kubersoftware\Microservices\BaseObject;
 
 class UserTokenIdResponse extends BaseObject
 {
-    private string $id = 'null';
+    private string $id;
 
     /**
      * @return string

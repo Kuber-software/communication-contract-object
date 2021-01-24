@@ -6,23 +6,21 @@ namespace Kubersoftware\Microservices;
 
 abstract class BaseObject
 {
-    protected bool $isObjectNull = false;
+    protected bool $objectNull;
 
     /**
      * @return bool
      */
-    public function isObjectNull(): bool
+    public function getObjectNull(): bool
     {
-        return $this->isObjectNull;
+        return $this->objectNull;
     }
 
     /**
-     * @param bool $isObjectNull
-     * @return BaseObject
+     * @param bool $objectNull
      */
-    public function setIsObjectNull(bool $isObjectNull): BaseObject
+    public function setObjectNull(bool $objectNull): void
     {
-        $this->isObjectNull = $isObjectNull;
-        return $this;
+        $this->objectNull = $objectNull;
     }
 }
