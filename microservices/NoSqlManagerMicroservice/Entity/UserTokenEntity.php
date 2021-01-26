@@ -126,4 +126,14 @@ class UserTokenEntity
         return $this;
     }
 
+    /**
+     * @param DateTime $createdAt
+     * @return UserTokenEntity
+     */
+    public function setCreatedAt(DateTime $createdAt): UserTokenEntity
+    {
+        $this->createdAt = $createdAt;
+        return $this;
+    }
+
 }
