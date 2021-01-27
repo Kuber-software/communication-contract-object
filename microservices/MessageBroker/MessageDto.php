@@ -5,6 +5,7 @@ namespace Kubersoftware\Microservices\MessageBroker;
 
 
 use DateTime;
+use Ramsey\Uuid\UuidInterface;
 
 class MessageDto
 {
@@ -21,19 +22,26 @@ class MessageDto
     private string $toMicroserviceName;
 
     /**
+     * Uuid задачи
+     * @JMS\Type("uuid")
+     * @var UuidInterface
+     */
+    private UuidInterface $taskUuid;
+
+    /**
      * Текущее время запроса
      * @var DateTime
      */
     private DateTime $createdAt;
 
     /**
-     * Нужно ли фиксировать таску для скрутинайзера
+     * Нужно ли фиксировать задачу для скрутинайзера
      * @var bool
      */
     private bool $sendToScrutinizer;
 
     /**
-     * Максимальное время отработки таски
+     * Максимальное время отработки задачи
      * @var int
      */
     private int $maxTimeOutInSec;
@@ -171,4 +179,24 @@ class MessageDto
         $this->methodName = $methodName;
         return $this;
     }
+
+    /**
+     * @return UuidInterface
+     */
+    public function getTaskUuid(): UuidInterface
+    {
+        return $this->taskUuid;
+    }
+
+    /**
+     * @param UuidInterface $taskUuid
+     * @return MessageDto
+     */
+    public function setTaskUuid(UuidInterface $taskUuid): MessageDto
+    {
+        $this->taskUuid = $taskUuid;
+        return $this;
+    }
+
+
 }
