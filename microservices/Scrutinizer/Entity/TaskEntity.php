@@ -27,13 +27,13 @@ class TaskEntity
      * Название микросервиса, который выполняет задачу
      * @var string
      */
-    private string $doTasKMicroserviceName;
+    private string $doTaskMicroserviceName;
 
     /**
      * Объект задачи
      * @var string
      */
-    private string $objectTasK;
+    private string $objectTask;
 
     /**
      * Текущее время запроса
@@ -51,7 +51,7 @@ class TaskEntity
      * Дедлайн выполнения задачи
      * @var DateTime
      */
-    private DateTime $deadLineTasK;
+    private DateTime $deadLineTask;
 
     /**
      * Пауза между попытками в секундах
@@ -63,7 +63,7 @@ class TaskEntity
      * Статус выполнения задачи
      * @var EnumStatus
      */
-    private EnumStatus $statusTasK;
+    private EnumStatus $statusTask;
 
     /**
      * Имя метода
@@ -75,7 +75,16 @@ class TaskEntity
      * Результат выполненной задачи
      * @var string
      */
-    private string $resultTasK;
+    private string $resultTask;
+
+
+    public function __construct()
+    {
+        $this->upAt = new DateTime();
+        $this->pauseBetweenTry = 600;
+        $this->resultTask = 'null';
+    }
+
 
     /**
      * @return string
@@ -98,36 +107,36 @@ class TaskEntity
     /**
      * @return string
      */
-    public function getDoTasKMicroserviceName(): string
+    public function getDoTaskMicroserviceName(): string
     {
-        return $this->doTasKMicroserviceName;
+        return $this->doTaskMicroserviceName;
     }
 
     /**
-     * @param string $doTasKMicroserviceName
+     * @param string $doTaskMicroserviceName
      * @return TaskEntity
      */
-    public function setDoTasKMicroserviceName(string $doTasKMicroserviceName): TaskEntity
+    public function setDoTaskMicroserviceName(string $doTaskMicroserviceName): TaskEntity
     {
-        $this->doTasKMicroserviceName = $doTasKMicroserviceName;
+        $this->doTaskMicroserviceName = $doTaskMicroserviceName;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getObjectTasK(): string
+    public function getObjectTask(): string
     {
-        return $this->objectTasK;
+        return $this->objectTask;
     }
 
     /**
-     * @param string $objectTasK
+     * @param string $objectTask
      * @return TaskEntity
      */
-    public function setObjectTasK(string $objectTasK): TaskEntity
+    public function setObjectTask(string $objectTask): TaskEntity
     {
-        $this->objectTasK = $objectTasK;
+        $this->objectTask = $objectTask;
         return $this;
     }
 
@@ -170,18 +179,18 @@ class TaskEntity
     /**
      * @return DateTime
      */
-    public function getDeadLineTasK(): DateTime
+    public function getDeadLineTask(): DateTime
     {
-        return $this->deadLineTasK;
+        return $this->deadLineTask;
     }
 
     /**
-     * @param DateTime $deadLineTasK
+     * @param DateTime $deadLineTask
      * @return TaskEntity
      */
-    public function setDeadLineTasK(DateTime $deadLineTasK): TaskEntity
+    public function setDeadLineTask(DateTime $deadLineTask): TaskEntity
     {
-        $this->deadLineTasK = $deadLineTasK;
+        $this->deadLineTask = $deadLineTask;
         return $this;
     }
 
@@ -206,18 +215,18 @@ class TaskEntity
     /**
      * @return EnumStatus
      */
-    public function getStatusTasK(): EnumStatus
+    public function getStatusTask(): EnumStatus
     {
-        return $this->statusTasK;
+        return $this->statusTask;
     }
 
     /**
-     * @param EnumStatus $statusTasK
+     * @param EnumStatus $statusTask
      * @return TaskEntity
      */
-    public function setStatusTasK(EnumStatus $statusTasK): TaskEntity
+    public function setStatusTask(EnumStatus $statusTask): TaskEntity
     {
-        $this->statusTasK = $statusTasK;
+        $this->statusTask = $statusTask;
         return $this;
     }
 
@@ -242,18 +251,18 @@ class TaskEntity
     /**
      * @return string
      */
-    public function getResultTasK(): string
+    public function getResultTask(): string
     {
-        return $this->resultTasK;
+        return $this->resultTask;
     }
 
     /**
-     * @param string $resultTasK
+     * @param string $resultTask
      * @return TaskEntity
      */
-    public function setResultTasK(string $resultTasK): TaskEntity
+    public function setResultTask(string $resultTask): TaskEntity
     {
-        $this->resultTasK = $resultTasK;
+        $this->resultTask = $resultTask;
         return $this;
     }
 
@@ -274,7 +283,6 @@ class TaskEntity
         $this->taskUuid = $taskUuid;
         return $this;
     }
-
 
 
 }
