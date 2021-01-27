@@ -6,9 +6,17 @@ namespace Kubersoftware\Microservices\Scrutinizer\Entity;
 
 use DateTime;
 use Kubersoftware\Microservices\EnumStatus;
+use Ramsey\Uuid\UuidInterface;
 
 class TaskEntity
 {
+    /**
+     * Uuid задачи
+     * @JMS\Type("uuid")
+     * @var UuidInterface
+     */
+    private UuidInterface $taskUuid;
+
     /**
      * Название микросервиса, который создаёт задачу
      * @var string
@@ -248,6 +256,25 @@ class TaskEntity
         $this->resultTasK = $resultTasK;
         return $this;
     }
+
+    /**
+     * @return UuidInterface
+     */
+    public function getTaskUuid(): UuidInterface
+    {
+        return $this->taskUuid;
+    }
+
+    /**
+     * @param UuidInterface $taskUuid
+     * @return TaskEntity
+     */
+    public function setTaskUuid(UuidInterface $taskUuid): TaskEntity
+    {
+        $this->taskUuid = $taskUuid;
+        return $this;
+    }
+
 
 
 }
