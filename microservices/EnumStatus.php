@@ -52,15 +52,15 @@ class EnumStatus
 
     /**
      * @param string $status
-     * @return EnumStatus|string
+     * @return string
      */
-    public function setStatus(string $status)
+    public function setStatus(string $status): string
     {
         if (!in_array($status, (new \ReflectionClass(__CLASS__))->getConstants(), true)) {
             throw new RuntimeException("Error, '$status' constant does not exist");
         }
         $this->status = $status;
-        return $this;
+        return $status;
     }
 
 
