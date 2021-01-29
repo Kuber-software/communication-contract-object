@@ -4,18 +4,24 @@
 namespace Kubersoftware\Microservices\Scoring\Interfaces;
 
 
-use Kubersoftware\Microservices\Scoring\Request\CompanyByInnTypeRequest;
 use Kubersoftware\Microservices\Scoring\Request\CompanyInnRequest;
-use Kubersoftware\Microservices\Scoring\Response\CompanyInformationEntityResponse;
+use Kubersoftware\Microservices\Scoring\Response\IndividualInformationEntityResponse;
 use Kubersoftware\Microservices\Scoring\Response\CompanyTypeResponse;
+use Kubersoftware\Microservices\Scoring\Response\LegalInformationEntityResponse;
 
 interface CompanyInformationRepositoryInterface
 {
     /**
-     * @param CompanyByInnTypeRequest $companyByInnTypeRequest
-     * @return CompanyInformationEntityResponse
+     * @param CompanyInnRequest $companyInnRequest
+     * @return IndividualInformationEntityResponse
      */
-    public function getInformationCompany(CompanyByInnTypeRequest $companyByInnTypeRequest): CompanyInformationEntityResponse;
+    public function getInformationCompanyLegal(CompanyInnRequest $companyInnRequest): IndividualInformationEntityResponse;
+
+    /**
+     * @param CompanyInnRequest $companyInnRequest
+     * @return LegalInformationEntityResponse
+     */
+    public function getInformationCompanyIndividual(CompanyInnRequest $companyInnRequest): LegalInformationEntityResponse;
 
     /**
      * @param CompanyInnRequest $companyInnRequest

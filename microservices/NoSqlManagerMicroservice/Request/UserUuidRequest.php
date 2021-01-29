@@ -6,7 +6,6 @@ namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Request;
 use Kubersoftware\Microservices\BaseObject;
 use Kubersoftware\Microservices\MessageBroker\MessageDto;
 use Kubersoftware\Microservices\MessageBroker\MessageDtoInterface;
-use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
 use Ramsey\Uuid\UuidInterface;
 
 class UserUuidRequest extends BaseObject implements MessageDtoInterface

@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Kubersoftware\Microservices\Scrutinizer\Request;
+namespace Kubersoftware\Microservices\NoSqlManagerMicroservice\Request;
 
 
 use Kubersoftware\Microservices\BaseObject;
-use Kubersoftware\Microservices\Scrutinizer\Entity\TaskScrutinizerEntity;
+use Kubersoftware\Microservices\NoSqlManagerMicroservice\Entity\TaskScrutinizerEntity;
 
 class TaskScrutinizerEntityRequest extends BaseObject
 {

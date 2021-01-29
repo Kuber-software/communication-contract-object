@@ -6,7 +6,7 @@ namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Request;
 use Kubersoftware\Microservices\BaseObject;
 use Kubersoftware\Microservices\MessageBroker\MessageDto;
 use Kubersoftware\Microservices\MessageBroker\MessageDtoInterface;
-use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
+
 
 class UserTokenRequest extends BaseObject implements MessageDtoInterface
 {
