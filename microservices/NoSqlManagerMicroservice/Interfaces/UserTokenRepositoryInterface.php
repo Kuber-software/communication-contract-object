@@ -6,7 +6,7 @@ namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Interfaces;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Request\UserTokenEntityRequest;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Request\UserTokenRequest;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Request\UserUuidRequest;
-use Kubersoftware\Microservices\NosqlManagerMicroservice\Response\UserTokenEntitiesResponse;
+use Kubersoftware\Microservices\NosqlManagerMicroservice\Response\UserTokenEntityResponse;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Response\UserTokenEntityBooleanResponse;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Response\UserTokenIdResponse;
 
@@ -20,9 +20,9 @@ interface UserTokenRepositoryInterface
 
     /**
      * @param UserTokenRequest $userTokenRequest
-     * @return UserTokenEntitiesResponse
+     * @return UserTokenEntityResponse
      */
-    public function findOneByUserToken(UserTokenRequest $userTokenRequest): UserTokenEntitiesResponse;
+    public function findOneByUserToken(UserTokenRequest $userTokenRequest): UserTokenEntityResponse;
 
     /**
      * @param UserTokenRequest $userTokenRequest

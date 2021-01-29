@@ -6,7 +6,7 @@ use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
 use Spatie\Typed\Collection;
 use Spatie\Typed\T;
 
-class UserTokenEntitiesResponse extends BaseObject
+class UserTokenEntityResponse extends BaseObject
 {
     private Collection $collection;
 
@@ -25,9 +25,9 @@ class UserTokenEntitiesResponse extends BaseObject
 
     /**
      * @param UserTokenEntity $userTokenEntity
-     * @return UserTokenEntitiesResponse
+     * @return UserTokenEntityResponse
      */
-    public function addToCollection(UserTokenEntity $userTokenEntity): UserTokenEntitiesResponse
+    public function addToCollection(UserTokenEntity $userTokenEntity): UserTokenEntityResponse
     {
         $this->collection[] = $userTokenEntity;
 
