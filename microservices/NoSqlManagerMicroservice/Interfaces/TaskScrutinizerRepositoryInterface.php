@@ -1,15 +1,15 @@
 <?php
 
-namespace Kubersoftware\Microservices\Scrutinizer\Interfaces;
+namespace Kubersoftware\Microservices\NoSqlManagerMicroservice\Interfaces;
 
 
-use Kubersoftware\Microservices\Scrutinizer\Request\TaskScrutinizerEntityRequest;
-use Kubersoftware\Microservices\Scrutinizer\Request\TaskScrutinizerStatusRequest;
-use Kubersoftware\Microservices\Scrutinizer\Request\TaskScrutinizerUuidEntityRequest;
-use Kubersoftware\Microservices\Scrutinizer\Request\TaskScrutinizerUuidRequest;
-use Kubersoftware\Microservices\Scrutinizer\Response\TaskScrutinizerBooleanResponse;
-use Kubersoftware\Microservices\Scrutinizer\Response\TaskScrutinizerEntityResponse;
-use Kubersoftware\Microservices\Scrutinizer\Response\TaskScrutinizerEntitysResponse;
+use Kubersoftware\Microservices\NoSqlManagerMicroservice\Request\TaskScrutinizerEntityRequest;
+use Kubersoftware\Microservices\NoSqlManagerMicroservice\Request\TaskScrutinizerStatusRequest;
+use Kubersoftware\Microservices\NoSqlManagerMicroservice\Request\TaskScrutinizerUuidEntityRequest;
+use Kubersoftware\Microservices\NoSqlManagerMicroservice\Request\TaskScrutinizerUuidRequest;
+use Kubersoftware\Microservices\NoSqlManagerMicroservice\Response\TaskScrutinizerBooleanResponse;
+use Kubersoftware\Microservices\NoSqlManagerMicroservice\Response\TaskScrutinizerEntityResponse;
+use Kubersoftware\Microservices\NoSqlManagerMicroservice\Response\TaskScrutinizerEntitysResponse;
 
 interface TaskScrutinizerRepositoryInterface
 {
