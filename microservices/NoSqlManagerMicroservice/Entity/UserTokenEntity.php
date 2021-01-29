@@ -9,7 +9,6 @@ use Ramsey\Uuid\UuidInterface;
 class UserTokenEntity
 {
     /**
-     * @JMS\Type("uuid")
      * @var UuidInterface
      */
     private UuidInterface $userUuid;
@@ -17,10 +16,19 @@ class UserTokenEntity
     /**
      * @var string
      */
+    private string $userEmail;
+
+    /**
+     * @var array
+     */
+    private array $userRoles;
+
+    /**
+     * @var string
+     */
     private string $token;
 
     /**
-     * @Type("DateTime<'Y-m-d'>")
      * @var DateTime
      */
     private DateTime $createdAt;
@@ -133,6 +141,42 @@ class UserTokenEntity
     public function setCreatedAt(DateTime $createdAt): UserTokenEntity
     {
         $this->createdAt = $createdAt;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserEmail(): string
+    {
+        return $this->userEmail;
+    }
+
+    /**
+     * @param string $userEmail
+     * @return UserTokenEntity
+     */
+    public function setUserEmail(string $userEmail): UserTokenEntity
+    {
+        $this->userEmail = $userEmail;
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function getUserRoles(): array
+    {
+        return $this->userRoles;
+    }
+
+    /**
+     * @param array $userRoles
+     * @return UserTokenEntity
+     */
+    public function setUserRoles(array $userRoles): UserTokenEntity
+    {
+        $this->userRoles = $userRoles;
         return $this;
     }
 

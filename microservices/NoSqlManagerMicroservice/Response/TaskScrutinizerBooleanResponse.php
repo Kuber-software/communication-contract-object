@@ -6,7 +6,7 @@ namespace Kubersoftware\Microservices\Scrutinizer\Response;
 
 use Kubersoftware\Microservices\BaseObject;
 
-class TaskBooleanResponse  extends BaseObject
+class TaskScrutinizerBooleanResponse  extends BaseObject
 {
     private bool $booleanResponse;
 
@@ -20,9 +20,9 @@ class TaskBooleanResponse  extends BaseObject
 
     /**
      * @param bool $objectNull
-     * @return TaskBooleanResponse
+     * @return TaskScrutinizerBooleanResponse
      */
-    public function setObjectNull(bool $objectNull): TaskBooleanResponse
+    public function setObjectNull(bool $objectNull): TaskScrutinizerBooleanResponse
     {
         $this->objectNull = $objectNull;
         return $this;
@@ -38,9 +38,9 @@ class TaskBooleanResponse  extends BaseObject
 
     /**
      * @param bool $booleanResponse
-     * @return TaskBooleanResponse
+     * @return TaskScrutinizerBooleanResponse
      */
-    public function setBooleanResponse(bool $booleanResponse): TaskBooleanResponse
+    public function setBooleanResponse(bool $booleanResponse): TaskScrutinizerBooleanResponse
     {
         $this->booleanResponse = $booleanResponse;
         return $this;

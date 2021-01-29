@@ -57,7 +57,7 @@ class EnumStatus
     public function setStatus(string $status)
     {
         if (!in_array($status, (new \ReflectionClass(__CLASS__))->getConstants(), true)) {
-            throw new RuntimeException("Error, '$status' constant does not exist");
+            throw new RuntimeException("Error, '$status' constant does not exist in packages.communication-contract-object");
         }
         $this->status = $status;
         return $this;

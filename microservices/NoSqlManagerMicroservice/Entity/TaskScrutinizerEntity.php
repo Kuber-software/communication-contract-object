@@ -8,7 +8,7 @@ use DateTime;
 use Kubersoftware\Microservices\EnumStatus;
 use Ramsey\Uuid\UuidInterface;
 
-class TaskEntity
+class TaskScrutinizerEntity
 {
     /**
      * Uuid задачи
@@ -96,9 +96,9 @@ class TaskEntity
 
     /**
      * @param string $createTaskMicroserviceName
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setCreateTaskMicroserviceName(string $createTaskMicroserviceName): TaskEntity
+    public function setCreateTaskMicroserviceName(string $createTaskMicroserviceName): TaskScrutinizerEntity
     {
         $this->createTaskMicroserviceName = $createTaskMicroserviceName;
         return $this;
@@ -114,9 +114,9 @@ class TaskEntity
 
     /**
      * @param string $doTaskMicroserviceName
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setDoTaskMicroserviceName(string $doTaskMicroserviceName): TaskEntity
+    public function setDoTaskMicroserviceName(string $doTaskMicroserviceName): TaskScrutinizerEntity
     {
         $this->doTaskMicroserviceName = $doTaskMicroserviceName;
         return $this;
@@ -132,9 +132,9 @@ class TaskEntity
 
     /**
      * @param string $objectTask
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setObjectTask(string $objectTask): TaskEntity
+    public function setObjectTask(string $objectTask): TaskScrutinizerEntity
     {
         $this->objectTask = $objectTask;
         return $this;
@@ -150,9 +150,9 @@ class TaskEntity
 
     /**
      * @param DateTime $createdAt
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setCreatedAt(DateTime $createdAt): TaskEntity
+    public function setCreatedAt(DateTime $createdAt): TaskScrutinizerEntity
     {
         $this->createdAt = $createdAt;
         return $this;
@@ -168,9 +168,9 @@ class TaskEntity
 
     /**
      * @param DateTime $upAt
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setUpAt(DateTime $upAt): TaskEntity
+    public function setUpAt(DateTime $upAt): TaskScrutinizerEntity
     {
         $this->upAt = $upAt;
         return $this;
@@ -186,9 +186,9 @@ class TaskEntity
 
     /**
      * @param DateTime $deadLineTask
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setDeadLineTask(DateTime $deadLineTask): TaskEntity
+    public function setDeadLineTask(DateTime $deadLineTask): TaskScrutinizerEntity
     {
         $this->deadLineTask = $deadLineTask;
         return $this;
@@ -204,9 +204,9 @@ class TaskEntity
 
     /**
      * @param int $pauseBetweenTry
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setPauseBetweenTry(int $pauseBetweenTry): TaskEntity
+    public function setPauseBetweenTry(int $pauseBetweenTry): TaskScrutinizerEntity
     {
         $this->pauseBetweenTry = $pauseBetweenTry;
         return $this;
@@ -222,9 +222,9 @@ class TaskEntity
 
     /**
      * @param EnumStatus $statusTask
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setStatusTask(EnumStatus $statusTask): TaskEntity
+    public function setStatusTask(EnumStatus $statusTask): TaskScrutinizerEntity
     {
         $this->statusTask = $statusTask;
         return $this;
@@ -240,9 +240,9 @@ class TaskEntity
 
     /**
      * @param string $methodName
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setMethodName(string $methodName): TaskEntity
+    public function setMethodName(string $methodName): TaskScrutinizerEntity
     {
         $this->methodName = $methodName;
         return $this;
@@ -258,9 +258,9 @@ class TaskEntity
 
     /**
      * @param string $resultTask
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setResultTask(string $resultTask): TaskEntity
+    public function setResultTask(string $resultTask): TaskScrutinizerEntity
     {
         $this->resultTask = $resultTask;
         return $this;
@@ -276,9 +276,9 @@ class TaskEntity
 
     /**
      * @param UuidInterface $taskUuid
-     * @return TaskEntity
+     * @return TaskScrutinizerEntity
      */
-    public function setTaskUuid(UuidInterface $taskUuid): TaskEntity
+    public function setTaskUuid(UuidInterface $taskUuid): TaskScrutinizerEntity
     {
         $this->taskUuid = $taskUuid;
         return $this;
