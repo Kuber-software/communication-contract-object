@@ -22,7 +22,7 @@ class MessageDto
     private string $toMicroserviceName;
 
     /**
-     * Uuid задачи
+     * Uuid задачи. Устанавливается отправителем
      * @JMS\Type("uuid")
      * @var UuidInterface
      */
