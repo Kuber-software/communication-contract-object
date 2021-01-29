@@ -32,7 +32,7 @@ class UserTokenRequest extends BaseObject implements MessageDtoInterface
         return $this;
     }
 
-    public function setMessageDto(MessageDto $messageDto): MessageDtoInterface
+    public function setMessageDto(MessageDto $messageDto): UserTokenRequest
     {
         $this->messageDto = $messageDto;
         return $this;

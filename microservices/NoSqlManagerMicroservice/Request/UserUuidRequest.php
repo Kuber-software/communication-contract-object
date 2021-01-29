@@ -33,7 +33,7 @@ class UserUuidRequest extends BaseObject implements MessageDtoInterface
         return $this;
     }
 
-    public function setMessageDto(MessageDto $messageDto): MessageDtoInterface
+    public function setMessageDto(MessageDto $messageDto): UserUuidRequest
     {
         $this->messageDto = $messageDto;
         return $this;
