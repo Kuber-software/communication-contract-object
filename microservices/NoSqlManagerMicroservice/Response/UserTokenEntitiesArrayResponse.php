@@ -3,8 +3,6 @@ namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Response;
 
 use Kubersoftware\Microservices\BaseObject;
 use Kubersoftware\Microservices\NosqlManagerMicroservice\Entity\UserTokenEntity;
-use Spatie\Typed\Collection;
-use Spatie\Typed\T;
 
 class UserTokenEntitiesArrayResponse extends BaseObject
 {

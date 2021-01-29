@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Kubersoftware\Microservices\Scrutinizer\Entity;
+namespace Kubersoftware\Microservices\NoSqlManagerMicroservice\Entity;
 
 
 use DateTime;
-use Kubersoftware\Microservices\EnumStatus;
+use Kubersoftware\Microservices\Scrutinizer\EnumScrutinizerStatus;
 use Ramsey\Uuid\UuidInterface;
 
 class TaskScrutinizerEntity
@@ -61,9 +61,9 @@ class TaskScrutinizerEntity
 
     /**
      * Статус выполнения задачи
-     * @var EnumStatus
+     * @var EnumScrutinizerStatus
      */
-    private EnumStatus $statusTask;
+    private EnumScrutinizerStatus $statusTask;
 
     /**
      * Имя метода
@@ -213,18 +213,18 @@ class TaskScrutinizerEntity
     }
 
     /**
-     * @return EnumStatus
+     * @return EnumScrutinizerStatus
      */
-    public function getStatusTask(): EnumStatus
+    public function getStatusTask(): EnumScrutinizerStatus
     {
         return $this->statusTask;
     }
 
     /**
-     * @param EnumStatus $statusTask
+     * @param EnumScrutinizerStatus $statusTask
      * @return TaskScrutinizerEntity
      */
-    public function setStatusTask(EnumStatus $statusTask): TaskScrutinizerEntity
+    public function setStatusTask(EnumScrutinizerStatus $statusTask): TaskScrutinizerEntity
     {
         $this->statusTask = $statusTask;
         return $this;

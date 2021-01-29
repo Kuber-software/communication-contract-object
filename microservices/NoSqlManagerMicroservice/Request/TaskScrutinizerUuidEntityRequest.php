@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Kubersoftware\Microservices\Scrutinizer\Request;
+namespace Kubersoftware\Microservices\NoSqlManagerMicroservice\Request;
 
 
 use Kubersoftware\Microservices\BaseObject;

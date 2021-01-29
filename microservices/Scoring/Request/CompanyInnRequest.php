@@ -10,6 +10,12 @@ use Kubersoftware\Microservices\MessageBroker\MessageDtoInterface;
 
 class CompanyInnRequest extends BaseObject implements MessageDtoInterface
 {
+    private string $inn;
+
+    /**
+     * @var MessageDto
+     */
+    private MessageDto $messageDto;
 
     /**
      * @param MessageDto $messageDto
@@ -17,7 +23,8 @@ class CompanyInnRequest extends BaseObject implements MessageDtoInterface
      */
     public function setMessageDto(MessageDto $messageDto): MessageDtoInterface
     {
-        // TODO: Implement setMessageDto() method.
+        $this->messageDto = $messageDto;
+        return $this;
     }
 
     /**
@@ -25,6 +32,25 @@ class CompanyInnRequest extends BaseObject implements MessageDtoInterface
      */
     public function getMessageDto(): MessageDto
     {
-        // TODO: Implement getMessageDto() method.
+        return $this->messageDto;
     }
+
+    /**
+     * @return string
+     */
+    public function getInn(): string
+    {
+        return $this->inn;
+    }
+
+    /**
+     * @param string $inn
+     * @return CompanyInnRequest
+     */
+    public function setInn(string $inn): CompanyInnRequest
+    {
+        $this->inn = $inn;
+        return $this;
+    }
+
 }
