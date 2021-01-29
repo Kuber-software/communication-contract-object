@@ -1,4 +1,5 @@
 <?php
+
 namespace Kubersoftware\Microservices\NosqlManagerMicroservice\Response;
 
 use Kubersoftware\Microservices\BaseObject;
@@ -8,29 +9,23 @@ use Spatie\Typed\T;
 
 class UserTokenEntityResponse extends BaseObject
 {
-    private Collection $collection;
-
-    public function __construct()
-    {
-        $this->collection = new Collection(T::generic(UserTokenEntity::class));
-    }
+    private UserTokenEntity $userTokenEntity;
 
     /**
-     * @return Collection
+     * @return UserTokenEntity
      */
-    public function getCollection(): Collection
+    public function getUserTokenEntity(): UserTokenEntity
     {
-        return $this->collection;
+        return $this->userTokenEntity;
     }
 
     /**
      * @param UserTokenEntity $userTokenEntity
      * @return UserTokenEntityResponse
      */
-    public function addToCollection(UserTokenEntity $userTokenEntity): UserTokenEntityResponse
+    public function setUserTokenEntity(UserTokenEntity $userTokenEntity): UserTokenEntityResponse
     {
-        $this->collection[] = $userTokenEntity;
-
+        $this->userTokenEntity = $userTokenEntity;
         return $this;
     }
 }
